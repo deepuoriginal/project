@@ -3,63 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>About Us - Vision and Mission</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
+        body, html {
+            height: 100%; /* Ensure the body and html cover full height of the viewport */
+            margin: 0; /* Reset default margin */
+            color: #FFFFFF; /* Set the text color to white */
+            background-image: url('about.jpg'); /* Set the full page background image */
+            background-size: cover; /* Cover the full page */
+            background-position: center; /* Center the background image */
+            font-family: Arial, sans-serif; /* Set a font */
+        }
+        #content {
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            flex-direction: column; /* Stack children vertically */
+            height: 100vh; /* Make the content area full viewport height */
+            text-align: center; /* Center text */
+            background-color: rgba(0, 0, 0, 0.5); /* Overlay color to enhance text readability */
             padding: 20px;
-            background: url('about.jpg') no-repeat center center/cover; /* Background image */
-            color: #333;
+            box-sizing: border-box;
+            font-size: 1.2em; /* Increase font size for better readability */
         }
-        
-        h1, h2 {
-            color: #007bff;
-            text-decoration: underline; /* Underline headings */
+        .title h2 {
+            font-size: 2em; /* Larger font size for titles */
         }
-        p, li {
-            margin: 10px 0;
+        .area p, .area ul {
+            font-size: 1.5em; /* Larger font size for paragraph and list */
         }
-        .section {
-            margin-bottom: 20px;
-        }
-        .back-to-home {
-            display: block;
-            width: fit-content;
-            margin: 20px auto 0; /* Center horizontally, margin-top 20px */
-            padding: 10px 20px;
+        a {
+            position: fixed; /* Make the link fixed to ensure it's always visible */
+            top: 20px; /* Position it towards the top of the page */
+            left: 20px; /* Position it from the left side of the page */
+            padding: 15px 30px; /* Increase padding for a larger button */
             background-color: #007bff;
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            text-align: center;
+            font-size: 1.5em; /* Larger font size for the link text */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+        a:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="section">
+<div id="content">
+    <div class="title">
         <h1>About Us</h1>
-        <p>Explore who we are, our vision, mission, and the values that drive us forward.</p>
     </div>
-    
-    <div class="section">
+    <div class="title">
         <h2>Vision</h2>
+    </div>
+    <div class="area">
         <p>To be a centre of excellence in engineering education for providing valuable resources to industry and society.</p>
     </div>
-
-    <div class="section">
+    <div class="title">
         <h2>Mission</h2>
+    </div>
+    <div class="area">
         <ul>
             <li>Providing quality education in engineering and technology.</li>
             <li>Involving in the development of society through technology transfer, entrepreneurship, and industry interaction.</li>
             <li>To inculcate social responsibility and ethical values among students through value education.</li>
         </ul>
     </div>
-    <a href="index.html" class="back-to-home">Back to Home</a>
 </div>
+<a href="index.html">Back to Home</a>
 
 </body>
-</html>
+                                                                                                                 </html>
