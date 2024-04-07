@@ -28,35 +28,35 @@
             margin: auto; /* Center the content div */
         }
         .title h1, .title h2 {
-            color: #000000; /* Change title colors to black */
-            margin: 0 auto; /* Center titles */
-            width: 100%; /* Ensure full width for consistency */
+            color: #000000; /* Title colors set to black */
+            text-decoration: underline; /* Underline titles */
+            font-size: 2.5em; /* Increase title size */
         }
         .area p, .area ul {
-            color: #FFFFFF; /* Keep the text color white for readability */
+            color: #FFFFFF; /* Text color white for readability */
+            font-size: 1.5em; /* Increase text size for better readability */
             text-align: justify; /* Justify text for uniform alignment */
-            margin: 0 auto; /* Center text blocks */
-            width: 100%; /* Ensure full width for consistency */
         }
-        a {
-            display: block;
-            margin-top: 20px;
-            padding: 10px 20px;
+        a.back-to-home {
+            position: absolute; /* Position absolute to move it up */
+            top: 20px; /* Position it towards the top of the viewport */
+            left: 20px; /* Position it from the left side of the viewport */
+            padding: 15px 30px; /* Increase padding for a larger button */
             background-color: #007bff;
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            font-size: 1.5em; /* Larger font size for the link text */
             transition: background-color 0.3s; /* Smooth transition for hover effect */
-            width: fit-content;
-            margin-left: auto;
-            margin-right: auto; /* Center the link */
         }
-        a:hover {
+        a.back-to-home:hover {
             background-color: #0056b3;
         }
     </style>
 </head>
 <body>
+
+<a href="index.html" class="back-to-home">Back to Home</a> <!-- Moved up for higher placement -->
 
 <div id="content">
     <div class="title">
@@ -79,7 +79,6 @@
         </ul>
     </div>
 </div>
-<a href="index.html">Back to Home</a>
 
 </body>
 </html>
