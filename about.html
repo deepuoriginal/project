@@ -24,13 +24,18 @@
             background-color: rgba(0, 0, 0, 0.5); /* Overlay color to enhance text readability */
             padding: 20px;
             box-sizing: border-box;
-            font-size: 1.2em; /* Increase font size for better readability */
+            width: 80%; /* Set width to maintain consistency */
+            max-width: 600px; /* Max width to prevent overly wide lines on larger screens */
+            margin: auto; /* Center the content div */
         }
-        .title h2 {
+        .title h2, .title h1 {
             font-size: 2em; /* Larger font size for titles */
+            text-decoration: underline; /* Underline titles */
         }
         .area p, .area ul {
-            font-size: 1.5em; /* Larger font size for paragraph and list */
+            font-size: 1.2em; /* Adjusted font size for paragraph and list */
+            font-weight: 300; /* Lighter font weight */
+            padding: 0 20px; /* Add padding to ensure text alignment */
         }
         a {
             position: fixed; /* Make the link fixed to ensure it's always visible */
@@ -75,4 +80,4 @@
 <a href="index.html">Back to Home</a>
 
 </body>
-                                                                                                                 </html>
+</html>
