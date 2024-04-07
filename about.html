@@ -10,25 +10,37 @@
             line-height: 1.6;
             margin: 0;
             padding: 20px;
-            background: #f4f4f4;
+            background: url('about.jpg') no-repeat center center/cover; /* Background image */
             color: #333;
         }
         .container {
             max-width: 800px;
             margin: auto;
-            background: #fff;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         h1, h2 {
             color: #007bff;
+            text-decoration: underline; /* Underline headings */
         }
-        p {
+        p, li {
             margin: 10px 0;
         }
         .section {
             margin-bottom: 20px;
+        }
+        .back-to-home {
+            display: block;
+            width: fit-content;
+            margin: 20px auto 0; /* Center horizontally, margin-top 20px */
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
         }
     </style>
 </head>
@@ -53,6 +65,7 @@
             <li>To inculcate social responsibility and ethical values among students through value education.</li>
         </ul>
     </div>
+    <a href="index.html" class="back-to-home">Back to Home</a>
 </div>
 
 </body>
