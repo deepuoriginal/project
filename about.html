@@ -1,4 +1,4 @@
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,36 +6,32 @@
     <title>Vision and Mission</title>
     <style>
         body, html {
-            height: 100%; /* Make sure the body and html tags span the full height of the viewport */
+            height: 100%; /* Ensure the body and html cover full height of the viewport */
             margin: 0; /* Reset default margin */
+            color: #FFFFFF; /* Set the text color to white */
+            background-image: url('about.jpg'); /* Set the full page background image */
+            background-size: cover; /* Cover the full page */
+            background-position: center; /* Center the background image */
+            font-family: Arial, sans-serif; /* Optional: Set a font */
+        }
+        #content {
             display: flex;
             justify-content: center; /* Center content horizontally */
             align-items: center; /* Center content vertically */
-            text-align: center; /* Ensure text is centered */
+            flex-direction: column; /* Stack children vertically */
+            height: 100vh; /* Make the content area full viewport height */
+            text-align: center; /* Center text */
+            background-color: rgba(0, 0, 0, 0.5); /* Optional: Overlay color to enhance text readability */
+            padding: 20px;
+            box-sizing: border-box;
         }
-        #content {
-            background-image: url('about.jpg'); /* Path to your image */
-            background-size: cover; /* Cover the entire section */
-            background-position: center; /* Center the background image */
-            padding: 20px; /* Add some padding */
-            border-radius: 15px; /* Optional: Adds rounded corners to your content section */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
-            max-width: 80%; /* Limit the content width and ensure it's centered */
-        }
-        .title h2 {
-            color: #007bff; /* Change title color */
-            margin-bottom: 20px; /* Add space below the title */
-        }
-        .area p, .area ul {
-            text-align: left; /* Align text to the left within its container */
-            margin: 0 auto; /* Center the content block */
-            max-width: 600px; /* Restrict maximum width for better readability */
+        .title h2, .area ul, a {
+            color: inherit; /* Ensure all text inherits the white color set on body */
         }
         a {
-            display: block; /* Make the link a block element to occupy its own line */
-            width: fit-content; /* Only occupy as much width as needed */
-            margin: 20px auto; /* Center the link horizontally and add margin */
-            padding: 10px 20px; /* Add padding around the text */
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
             background-color: #007bff;
             color: white;
             text-decoration: none;
@@ -43,7 +39,7 @@
             transition: background-color 0.3s; /* Smooth transition for hover effect */
         }
         a:hover {
-            background-color: #0056b3; /* Darken the button color slightly on hover */
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -70,4 +66,4 @@
 <a href="index.html">Back to Home</a>
 
 </body>
-</html>
+   </html>
