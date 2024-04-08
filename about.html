@@ -7,58 +7,52 @@
     <title>Vision and Mission</title>
     <style>
         body, html {
-            height: 100%; /* Ensure the body and html cover full height of the viewport */
-            margin: 0; /* Reset default margin */
-            background-image: url('about.jpg'); /* Set the full page background image */
-            background-size: cover; /* Cover the full page */
-            background-position: center; /* Center the background image */
-            font-family: Arial, sans-serif; /* Set a font */
-            color: #FFFFFF; /* Set initial text color to white for contrast */
+            height: 100%;
+            margin: 0;
+            background-image: url('about.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #FFFFFF;
         }
         #content {
             display: flex;
-            justify-content: center; /* Center content horizontally */
-            align-items: center; /* Center content vertically */
-            flex-direction: column; /* Stack children vertically */
-            height: 100vh; /* Make the content area full viewport height */
-            text-align: center; /* Center text */
+            flex-direction: column;
             padding: 20px;
             box-sizing: border-box;
-            width: 80%; /* Set width to maintain consistency */
-            max-width: 600px; /* Max width to prevent overly wide lines on larger screens */
-            margin: auto; /* Center the content div */
+            width: 80%;
+            max-width: 600px;
+            margin: auto;
         }
         .title h1, .title h2 {
-            color: #FFFFFF; /* Change title colors to white */
-            text-decoration: underline; /* Underline titles */
-            font-size: 2.5em; /* Increase title size */
+            color: #FFFFFF;
+            text-decoration: underline;
+            font-size: 2.5em;
         }
         .area p, .area ul {
-            font-size: 2em; /* Significantly increase text size for better readability */
-            text-align: justify; /* Justify text for uniform alignment */
+            font-size: 2em;
+            text-align: justify;
         }
         a.back-to-home {
-            position: absolute; /* Position absolute to keep it at a specific spot */
-            top: 20px; /* Position it towards the top of the viewport */
-            left: 20px; /* Position it from the left side of the viewport */
-            padding: 15px 30px; /* Increase padding for a larger button */
-            background-color: #007bff; /* Background color */
-            color: white; /* Text color */
+            padding: 20px 40px;
+            background-color: black;
+            color: white;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 1em; /* Adjust the font size as needed */
-            transition: background-color 0.3s; /* Smooth transition for hover effect */
+            font-size: 1.5em;
+            transition: background-color 0.3s;
         }
         a.back-to-home:hover {
-            background-color: #0056b3; /* Darker shade on hover */
+            background-color: #333;
+        }
+        .title {
+            text-align: left; /* Align titles to the left */
         }
     </style>
 </head>
 <body>
 
-
-    <button class="index.html" style="background-color: lightblue;">Back to Home</button>
-
+<a href="index.html" class="back-to-home">Back to Home</a>
 
 <div id="content">
     <div class="title">
@@ -83,3 +77,4 @@
 </div>
 
 </body>
+</html>
